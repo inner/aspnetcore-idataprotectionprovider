@@ -1,0 +1,11 @@
+﻿<h1>Plain UserId</h1>
+<h4>User '@ViewData["UserName"]' Id: @ViewData["PlainUserId"]</h4>
+
+<br />
+
+<h1>Encrypted UserId</h1>
+<h4>@ViewData["EncryptedUserId"]</h4>
+
+<h4>
+    <a asp-action="ViewUser" asp-route-id="@ViewData["EncryptedUserId"]">View user</a>
+</h4>
